@@ -3,7 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/A_pfp.png" type="image/x-icon">
         <title> Avnish Kovi Portfolio</title>
+        <style>
+            my-highlight {
+                display: block;
+                border: 2px solid black;
+            }
+        </style>
+        <script>
+            console.log("Hello World from my custom element!");
+        </script>
     </head>
     <body>
         <header>
@@ -16,18 +26,35 @@
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <search>
+                    <input type="text" placeholder="Search portfolio...">
+                </search>
             </nav>
         </header>
         <main>
-            <h1>Hi, I'm Avnish!</h1>
-            <p>I'm a Computer Science student at UCSD passionate about software development. This is my personal portfolio showcasing my work, skills, and background.</p>
-    
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="images/resume.pdf" download>Download My Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/avnish-kovi-8365a1160/" target="_blank">LinkedIn</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+            <hgroup>
+                <h1>Hi, I'm Avnish!</h1>
+                <h2>Software Engineer &amp Developer</h2>
+            </hgroup>
+            <figure>
+                <img src="images/profilepic.jpg" alt="pfp">
+                <figcaption>I'm a <abbr title="Computer Science">CS</abbr> student at UCSD passionate about software development!</figcaption>
+            </figure>
+            <my-highlight>
+                Welcome to my portfolio! This site showcases my experience, skills, and background.
+            </my-highlight>
+            <aside>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="images/resume.pdf" download>Download My Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/avnish-kovi-8365a1160/" target="_blank">LinkedIn</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </aside>
+            <hello-world></hello-world>
         </main>
+        <footer>
+            <p>&copy; 2025 Avnish Kovi. All rights reserved.</p>
+        </footer>
     </body>
 </html>
